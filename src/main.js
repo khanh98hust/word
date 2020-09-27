@@ -5,7 +5,10 @@ import {routes} from './routers/router';
 
 Vue.use(vueRouter)
 
-const router = new vueRouter({routes})
+const router = new vueRouter({
+  mode : 'history',
+  routes
+})
 
 new Vue({
   el: '#app',
